@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: gatewayservice
+
+server:
+  port: 8200
