@@ -4,3 +4,12 @@ spring:
 
 server:
   port: 8200
+
+eureka:
+  instance:
+    hostname: gatewayService
+    prefer-ip-address: true
+    lease-expiration-duration-in-seconds: 90
+  client:
+    serviceUrl:
+      defaultZone: http://eurekaService:8761/eureka
